@@ -1,6 +1,4 @@
-package com.docotel.core.base
-
-import android.content.Context
+package com.widyatama.core.base
 
 /**
  * Created by bezzo on 21/12/17.

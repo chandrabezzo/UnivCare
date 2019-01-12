@@ -1,12 +1,12 @@
-package com.widyatama.coreandroid.adapter.viewPager
+package com.widyatama.univcare.adapter.viewPager
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.features.auth.login.LoginFragment
-import com.widyatama.coreandroid.features.auth.register.RegisterFragment
+import com.widyatama.univcare.R
+import com.widyatama.univcare.features.auth.login.LoginFragment
+import com.widyatama.univcare.features.auth.register.RegisterFragment
 
 /**
  * Created by bezzo on 08/11/17.

@@ -1,10 +1,10 @@
-package com.widyatama.coreandroid.features.auth.forgotPassword
+package com.widyatama.univcare.features.auth.forgotPassword
 
 import com.widyatama.core.base.BasePresenter
 import com.widyatama.core.data.session.SessionHelper
 import com.widyatama.core.util.SchedulerProviderUtil
-import com.widyatama.coreandroid.data.local.LocalStorageHelper
-import com.widyatama.coreandroid.data.network.ApiHelper
+import com.widyatama.univcare.data.local.LocalStorageHelper
+import com.widyatama.univcare.data.network.ApiHelper
 import io.reactivex.disposables.CompositeDisposable
 
 class ForgotPasswordPresenter<V : ForgotPasswordContracts.View>

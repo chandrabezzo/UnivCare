@@ -1,4 +1,4 @@
-package com.docotel.core.base
+package com.widyatama.core.base
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -10,12 +10,11 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.docotel.core.BuildConfig
-import com.docotel.core.R
-import com.docotel.core.extension.AppExtensions
-import com.docotel.core.extension.toast
-import com.docotel.core.util.LocaleUtil
-import com.docotel.core.util.TelegramLogger
+import com.widyatama.core.BuildConfig
+import com.widyatama.core.R
+import com.widyatama.core.extension.AppExtensions
+import com.widyatama.core.extension.toast
+import com.widyatama.core.util.LocaleUtil
 import kotlinx.android.synthetic.main.default_toolbar.*
 
 /**
@@ -132,7 +131,6 @@ abstract class BaseActivity : AppCompatActivity(), BaseActivityContract, BaseFra
 
         if (BuildConfig.DEBUG){
             toast(message, Toast.LENGTH_SHORT)
-            TelegramLogger(this, error, getString(R.string.telegram_id)).send()
         }
     }
 

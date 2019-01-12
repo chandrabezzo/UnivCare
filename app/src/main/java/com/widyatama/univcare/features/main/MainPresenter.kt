@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.features.main
+package com.widyatama.univcare.features.main
 
 import android.widget.Toast
 import com.androidnetworking.error.ANError
@@ -9,10 +9,9 @@ import com.widyatama.core.data.session.SessionHelper
 import com.widyatama.core.extension.toast
 import com.widyatama.core.util.AppLoggerUtil
 import com.widyatama.core.util.SchedulerProviderUtil
-import com.widyatama.core.util.TelegramLogger
-import com.widyatama.coreandroid.data.local.LocalStorageHelper
-import com.widyatama.coreandroid.data.model.*
-import com.widyatama.coreandroid.data.network.ApiHelper
+import com.widyatama.univcare.data.local.LocalStorageHelper
+import com.widyatama.univcare.data.model.*
+import com.widyatama.univcare.data.network.ApiHelper
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.functions.Consumer
 import okhttp3.Response

@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.adapter.spinner
+package com.widyatama.univcare.adapter.spinner
 
 /**
  * Created by bezzo on 11/01/18.

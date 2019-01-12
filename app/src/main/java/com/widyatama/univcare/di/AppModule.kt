@@ -1,22 +1,22 @@
 
-package com.widyatama.coreandroid.di
+package com.widyatama.univcare.di
 
 import com.widyatama.core.data.session.SessionHelper
 import com.widyatama.core.util.SchedulerProviderUtil
-import com.widyatama.coreandroid.adapter.recyclerView.KaryawanRVAdapter
-import com.widyatama.coreandroid.adapter.spinner.JabatanSPAdapter
-import com.widyatama.coreandroid.data.local.LocalStorageHelper
-import com.widyatama.coreandroid.data.network.ApiHelper
-import com.widyatama.coreandroid.features.auth.AuthContracts
-import com.widyatama.coreandroid.features.auth.AuthPresenter
-import com.widyatama.coreandroid.features.auth.forgotPassword.ForgotPasswordContracts
-import com.widyatama.coreandroid.features.auth.forgotPassword.ForgotPasswordPresenter
-import com.widyatama.coreandroid.features.auth.login.LoginContracts
-import com.widyatama.coreandroid.features.auth.login.LoginPresenter
-import com.widyatama.coreandroid.features.auth.register.RegisterContracts
-import com.widyatama.coreandroid.features.auth.register.RegisterPresenter
-import com.widyatama.coreandroid.features.main.MainContracts
-import com.widyatama.coreandroid.features.main.MainPresenter
+import com.widyatama.univcare.adapter.recyclerView.KaryawanRVAdapter
+import com.widyatama.univcare.adapter.spinner.JabatanSPAdapter
+import com.widyatama.univcare.data.local.LocalStorageHelper
+import com.widyatama.univcare.data.network.ApiHelper
+import com.widyatama.univcare.features.auth.AuthContracts
+import com.widyatama.univcare.features.auth.AuthPresenter
+import com.widyatama.univcare.features.auth.forgotPassword.ForgotPasswordContracts
+import com.widyatama.univcare.features.auth.forgotPassword.ForgotPasswordPresenter
+import com.widyatama.univcare.features.auth.login.LoginContracts
+import com.widyatama.univcare.features.auth.login.LoginPresenter
+import com.widyatama.univcare.features.auth.register.RegisterContracts
+import com.widyatama.univcare.features.auth.register.RegisterPresenter
+import com.widyatama.univcare.features.main.MainContracts
+import com.widyatama.univcare.features.main.MainPresenter
 import com.google.gson.Gson
 import io.reactivex.disposables.CompositeDisposable
 import org.koin.android.ext.koin.androidApplication

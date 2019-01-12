@@ -1,4 +1,4 @@
-package com.docotel.core.base
+package com.widyatama.core.base
 
 import android.content.Context
 

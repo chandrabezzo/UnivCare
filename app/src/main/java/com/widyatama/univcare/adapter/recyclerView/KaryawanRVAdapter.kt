@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.adapter.recyclerView
+package com.widyatama.univcare.adapter.recyclerView
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.widyatama.core.base.BaseHolder
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.data.model.Karyawan
+import com.widyatama.univcare.R
+import com.widyatama.univcare.data.model.Karyawan
 import kotlinx.android.synthetic.main.item_rv_sample.view.*
 
 /**

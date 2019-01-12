@@ -1,8 +1,8 @@
-package com.widyatama.coreandroid.data.network
+package com.widyatama.univcare.data.network
 
 import com.widyatama.core.data.session.SessionHelper
 import com.widyatama.core.util.SchedulerProviderUtil
-import com.widyatama.coreandroid.data.network.repository.CompanyRepo
+import com.widyatama.univcare.data.network.repository.CompanyRepo
 
 /**
  * Created by bezzo on 11/01/18.

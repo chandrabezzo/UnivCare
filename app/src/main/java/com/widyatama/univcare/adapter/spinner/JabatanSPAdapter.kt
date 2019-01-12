@@ -1,12 +1,12 @@
-package com.widyatama.coreandroid.adapter.spinner
+package com.widyatama.univcare.adapter.spinner
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.data.model.JabatanResponse
+import com.widyatama.univcare.R
+import com.widyatama.univcare.data.model.JabatanResponse
 import kotlinx.android.synthetic.main.item_sp_sample.view.*
 
 /**

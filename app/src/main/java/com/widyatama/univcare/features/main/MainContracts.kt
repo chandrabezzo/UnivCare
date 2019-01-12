@@ -1,11 +1,11 @@
-package com.widyatama.coreandroid.features.main
+package com.widyatama.univcare.features.main
 
 import com.widyatama.core.base.BaseActivityContract
 import com.widyatama.core.base.BasePresenterContract
-import com.widyatama.coreandroid.data.model.JabatanResponse
-import com.widyatama.coreandroid.data.model.Karyawan
-import com.widyatama.coreandroid.data.model.Socmed
-import com.widyatama.coreandroid.data.model.UserResponse
+import com.widyatama.univcare.data.model.JabatanResponse
+import com.widyatama.univcare.data.model.Karyawan
+import com.widyatama.univcare.data.model.Socmed
+import com.widyatama.univcare.data.model.UserResponse
 
 class MainContracts {
 

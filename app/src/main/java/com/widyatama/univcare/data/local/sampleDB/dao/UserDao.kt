@@ -1,11 +1,11 @@
-package com.widyatama.coreandroid.data.local.sampleDB.dao
+package com.widyatama.univcare.data.local.sampleDB.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.widyatama.coreandroid.constanta.AppConstans
-import com.widyatama.coreandroid.data.model.UserResponse
+import com.widyatama.univcare.constanta.AppConstans
+import com.widyatama.univcare.data.model.UserResponse
 import io.reactivex.Flowable
 
 

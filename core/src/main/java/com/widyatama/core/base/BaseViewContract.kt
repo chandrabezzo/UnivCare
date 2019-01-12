@@ -1,4 +1,4 @@
-package com.docotel.core.base
+package com.widyatama.core.base
 
 /**
  * Created by bezzo on 21/12/17.

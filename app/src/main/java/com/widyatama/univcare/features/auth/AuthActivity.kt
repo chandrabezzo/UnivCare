@@ -1,12 +1,12 @@
-package com.widyatama.coreandroid.features.auth
+package com.widyatama.univcare.features.auth
 
 import android.os.Bundle
 import com.widyatama.core.base.BaseActivity
 import com.widyatama.core.extension.launchFragment
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.constanta.ApiConstans
-import com.widyatama.coreandroid.features.auth.login.LoginFragment
-import com.widyatama.coreandroid.features.auth.register.RegisterFragment
+import com.widyatama.univcare.R
+import com.widyatama.univcare.constanta.ApiConstans
+import com.widyatama.univcare.features.auth.login.LoginFragment
+import com.widyatama.univcare.features.auth.register.RegisterFragment
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_auth.*
 import org.koin.android.ext.android.inject

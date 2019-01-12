@@ -1,12 +1,12 @@
-package com.widyatama.coreandroid.features.auth.forgotPassword
+package com.widyatama.univcare.features.auth.forgotPassword
 
 
 import android.os.Bundle
 import android.view.View
 import com.widyatama.core.base.BaseDialogFragment
 import com.widyatama.core.extension.toast
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.constanta.ApiConstans
+import com.widyatama.univcare.R
+import com.widyatama.univcare.constanta.ApiConstans
 import org.koin.android.ext.android.inject
 
 class ForgotPasswordDialog : BaseDialogFragment(), ForgotPasswordContracts.View {

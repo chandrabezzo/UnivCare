@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.constanta;
+package com.widyatama.univcare.constanta;
 
 /**
  * Created by bezzo on 26/09/17.

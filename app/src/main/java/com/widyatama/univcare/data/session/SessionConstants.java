@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.data.session;
+package com.widyatama.univcare.data.session;
 
 /**
  * Created by bezzo on 02/02/18.

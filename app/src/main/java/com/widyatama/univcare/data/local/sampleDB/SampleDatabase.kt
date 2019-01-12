@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.data.local.sampleDB
+package com.widyatama.univcare.data.local.sampleDB
 
 import android.content.Context
 import androidx.room.Database
@@ -7,16 +7,16 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.widyatama.coreandroid.constanta.AppConstans
-import com.widyatama.coreandroid.data.local.sampleDB.converter.AlamatConverter
-import com.widyatama.coreandroid.data.local.sampleDB.dao.JabatanDao
-import com.widyatama.coreandroid.data.local.sampleDB.dao.KaryawanDao
-import com.widyatama.coreandroid.data.local.sampleDB.dao.SocmedDao
-import com.widyatama.coreandroid.data.local.sampleDB.dao.UserDao
-import com.widyatama.coreandroid.data.model.JabatanResponse
-import com.widyatama.coreandroid.data.model.Karyawan
-import com.widyatama.coreandroid.data.model.Socmed
-import com.widyatama.coreandroid.data.model.UserResponse
+import com.widyatama.univcare.constanta.AppConstans
+import com.widyatama.univcare.data.local.sampleDB.converter.AlamatConverter
+import com.widyatama.univcare.data.local.sampleDB.dao.JabatanDao
+import com.widyatama.univcare.data.local.sampleDB.dao.KaryawanDao
+import com.widyatama.univcare.data.local.sampleDB.dao.SocmedDao
+import com.widyatama.univcare.data.local.sampleDB.dao.UserDao
+import com.widyatama.univcare.data.model.JabatanResponse
+import com.widyatama.univcare.data.model.Karyawan
+import com.widyatama.univcare.data.model.Socmed
+import com.widyatama.univcare.data.model.UserResponse
 
 /**
  * Created by bezzo on 11/01/18.

@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.features.main
+package com.widyatama.univcare.features.main
 
 import android.os.Bundle
 import android.view.View
@@ -9,13 +9,13 @@ import com.widyatama.core.extension.launchActivity
 import com.widyatama.core.extension.snackbar
 import com.widyatama.core.extension.toast
 import com.widyatama.core.listener.OnLoadMoreListener
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.adapter.recyclerView.KaryawanRVAdapter
-import com.widyatama.coreandroid.adapter.spinner.JabatanSPAdapter
-import com.widyatama.coreandroid.data.model.JabatanResponse
-import com.widyatama.coreandroid.data.model.Karyawan
-import com.widyatama.coreandroid.data.model.Socmed
-import com.widyatama.coreandroid.data.model.UserResponse
+import com.widyatama.univcare.R
+import com.widyatama.univcare.adapter.recyclerView.KaryawanRVAdapter
+import com.widyatama.univcare.adapter.spinner.JabatanSPAdapter
+import com.widyatama.univcare.data.model.JabatanResponse
+import com.widyatama.univcare.data.model.Karyawan
+import com.widyatama.univcare.data.model.Socmed
+import com.widyatama.univcare.data.model.UserResponse
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject

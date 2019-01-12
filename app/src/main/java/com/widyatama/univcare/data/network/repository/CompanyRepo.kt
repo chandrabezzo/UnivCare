@@ -1,11 +1,11 @@
-package com.widyatama.coreandroid.data.network.repository
+package com.widyatama.univcare.data.network.repository
 
 import com.widyatama.core.data.network.RestApi
 import com.widyatama.core.util.SchedulerProviderUtil
-import com.widyatama.coreandroid.data.model.JabatanResponse
-import com.widyatama.coreandroid.data.model.Karyawan
-import com.widyatama.coreandroid.data.model.UserResponse
-import com.widyatama.coreandroid.data.network.ApiEndPoint
+import com.widyatama.univcare.data.model.JabatanResponse
+import com.widyatama.univcare.data.model.Karyawan
+import com.widyatama.univcare.data.model.UserResponse
+import com.widyatama.univcare.data.network.ApiEndPoint
 import com.rx2androidnetworking.Rx2ANRequest
 import io.reactivex.Observable
 

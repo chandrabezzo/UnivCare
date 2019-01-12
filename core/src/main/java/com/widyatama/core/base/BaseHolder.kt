@@ -1,4 +1,4 @@
-package com.docotel.core.base
+package com.widyatama.core.base
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

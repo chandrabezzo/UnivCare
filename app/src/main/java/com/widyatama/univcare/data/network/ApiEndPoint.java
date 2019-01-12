@@ -1,6 +1,6 @@
-package com.widyatama.coreandroid.data.network;
+package com.widyatama.univcare.data.network;
 
-import com.widyatama.coreandroid.BuildConfig;
+import com.widyatama.univcare.BuildConfig;
 
 /**
  * Created by bezzo on 25/09/17.

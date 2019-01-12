@@ -1,4 +1,4 @@
-package com.docotel.core.base
+package com.widyatama.core.base
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

@@ -1,7 +1,7 @@
-package com.widyatama.coreandroid.data.local
+package com.widyatama.univcare.data.local
 
 import android.content.Context
-import com.widyatama.coreandroid.data.local.sampleDB.SampleDatabase
+import com.widyatama.univcare.data.local.sampleDB.SampleDatabase
 
 /**
  * Created by bezzo on 11/01/18.

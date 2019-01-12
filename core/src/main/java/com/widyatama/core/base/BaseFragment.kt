@@ -1,4 +1,4 @@
-package com.docotel.core.base
+package com.widyatama.core.base
 
 import android.content.Context
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import com.docotel.core.extension.AppExtensions
+import com.widyatama.core.extension.AppExtensions
 import kotlinx.android.synthetic.main.default_toolbar.*
 
 /**

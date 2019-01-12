@@ -1,12 +1,12 @@
-package com.widyatama.coreandroid.features.auth.register
+package com.widyatama.univcare.features.auth.register
 
 
 import android.os.Bundle
 import android.view.View
 import com.widyatama.core.base.BaseFragment
 import com.widyatama.core.extension.toast
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.constanta.ApiConstans
+import com.widyatama.univcare.R
+import com.widyatama.univcare.constanta.ApiConstans
 import org.koin.android.ext.android.inject
 
 class RegisterFragment : BaseFragment(), RegisterContracts.View {

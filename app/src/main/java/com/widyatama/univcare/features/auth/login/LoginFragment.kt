@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.features.auth.login
+package com.widyatama.univcare.features.auth.login
 
 import android.os.Bundle
 import android.view.View
@@ -7,11 +7,10 @@ import com.widyatama.core.base.BaseFragment
 import com.widyatama.core.extension.launchActivity
 import com.widyatama.core.extension.launchDialog
 import com.widyatama.core.extension.toast
-import com.widyatama.core.security.Cryptonite
-import com.widyatama.coreandroid.R
-import com.widyatama.coreandroid.constanta.ApiConstans
-import com.widyatama.coreandroid.features.auth.forgotPassword.ForgotPasswordDialog
-import com.widyatama.coreandroid.features.main.MainActivity
+import com.widyatama.univcare.R
+import com.widyatama.univcare.constanta.ApiConstans
+import com.widyatama.univcare.features.auth.forgotPassword.ForgotPasswordDialog
+import com.widyatama.univcare.features.main.MainActivity
 import kotlinx.android.synthetic.main.fragment_login.*
 import org.koin.android.ext.android.inject
 

@@ -1,4 +1,4 @@
-package com.widyatama.coreandroid.features.auth.login
+package com.widyatama.univcare.features.auth.login
 
 import com.widyatama.core.base.BaseFragmentContract
 import com.widyatama.core.base.BasePresenterContract

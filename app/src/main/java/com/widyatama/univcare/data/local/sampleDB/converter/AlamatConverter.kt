@@ -1,7 +1,7 @@
-package com.widyatama.coreandroid.data.local.sampleDB.converter
+package com.widyatama.univcare.data.local.sampleDB.converter
 
 import androidx.room.TypeConverter
-import com.widyatama.coreandroid.data.model.Alamat
+import com.widyatama.univcare.data.model.Alamat
 import com.google.gson.Gson
 
 class AlamatConverter {

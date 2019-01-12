@@ -1,10 +1,10 @@
-package com.widyatama.coreandroid.data.model
+package com.widyatama.univcare.data.model
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.widyatama.coreandroid.constanta.AppConstans
+import com.widyatama.univcare.constanta.AppConstans
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
