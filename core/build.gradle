@@ -13,9 +13,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "BASE_URL_BOT", "\"https://api.telegram.org/bot522254269:AAF8rHpXnXK1YO3eD8wbH9zK4eJVlKtDZyY/\"")
-        buildConfigField("String", "KEY_LOGIN", "\"HIg60jt5gYkckOND\"")
-        buildConfigField("String", "KEY_REGISTER", "\"ErDZJm3v8gmZVS7j\"")
     }
 
     buildTypes {
@@ -58,9 +55,6 @@ dependencies {
 
     // # Networking
     implementation "com.amitshekhar.android:rx2-android-networking:$rootProject.ext.rx2FastAndroidNetworking"
-
-    // Hawk (replace Shared Preferences)
-    implementation "com.orhanobut:hawk:$rootProject.ext.hawkVersion"
 
     // #Firebase
     implementation "com.google.firebase:firebase-core:$rootProject.ext.firebaseCoreVersion"

@@ -11,7 +11,7 @@ android {
     flavorDimensions "default"
 
     defaultConfig {
-        applicationId "com.docotel.coreandroid"
+        applicationId "id.ac.widyatama.univcare"
         minSdkVersion 19
         targetSdkVersion 28
         multiDexEnabled true
@@ -36,7 +36,7 @@ android {
 
     buildTypes {
         debug {
-            resValue "string", "app_name", "Core Android Dev"
+            resValue "string", "app_name", "Univ Care Dev"
             applicationIdSuffix ".dev"
             versionNameSuffix '.DEBUG'
             useProguard false
@@ -47,13 +47,13 @@ android {
             useProguard true
             applicationIdSuffix ".staging"
             versionNameSuffix '.STAGING'
-            resValue "string", "app_name", "Core Android Staging"
+            resValue "string", "app_name", "Univ Care Staging"
             buildConfigField("String", "BASE_URL", "\"http://10.42.0.229:3000/\"")
         }
         release {
             minifyEnabled true
             useProguard true
-            resValue "string", "app_name", "Core Android"
+            resValue "string", "app_name", "Univ Care"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField("String", "BASE_URL", "\"http://192.168.1.12:3000/\"")
         }
@@ -103,9 +103,6 @@ dependencies {
 
     // # Networking
     implementation "com.amitshekhar.android:rx2-android-networking:$rootProject.ext.rx2FastAndroidNetworking"
-
-    // Hawk (replace Shared Preferences)
-    implementation "com.orhanobut:hawk:$rootProject.ext.hawkVersion"
 
     // # Image
     implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"

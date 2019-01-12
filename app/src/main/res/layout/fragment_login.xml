@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.docotel.coreandroid.features.auth.login.LoginFragment">
+    tools:context="com.widyatama.univcare.features.auth.login.LoginFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_email"
