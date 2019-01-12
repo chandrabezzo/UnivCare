@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rv_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.main.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/default_toolbar"
+        android:layout_alignParentTop="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:text="test"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/btn_test"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black_effective"
+        android:layout_below="@id/tv_title_user"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alamat"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/tv_user"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black_effective"
+        android:layout_below="@id/tv_title_alamat"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_socmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/socmed"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/tv_alamat"
+        android:layout_marginStart="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_socmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black_effective"
+        android:layout_below="@id/tv_title_socmed"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list"
+        android:layout_below="@id/tv_socmed"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_list"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:listitem="@layout/item_sp_sample"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sr_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_list"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ProgressBar
+                android:id="@+id/pb_load_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

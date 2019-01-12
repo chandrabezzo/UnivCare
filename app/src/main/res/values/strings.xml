@@ -1,0 +1,28 @@
+<resources>
+    <!--<string name="app_name">CoreMVP</string>-->
+
+    <!-- Default -->
+    <string name="search">Search</string>
+    <string name="log_receive_response" formatted="false">Received response for %s in %.1fms%n%s</string>
+    <string name="log_sending_response" formatted="false">Sending request %s on %s%n%s</string>
+    <string name="log_encoded_path" formatted="false">Encoded path %s</string>
+    <string name="log_data_is_null">Data is null</string>
+    <string name="telegram_id">\@chandra_bezzo</string>
+
+    <!-- Main -->
+    <string name="beranda">Beranda</string>
+    <string name="user">User</string>
+    <string name="alamat">Alamat</string>
+    <string name="socmed">Social Media</string>
+    <string name="list">List</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
