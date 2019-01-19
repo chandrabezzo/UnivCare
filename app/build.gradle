@@ -98,6 +98,8 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.ext.materialVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutVersion"
     implementation "androidx.legacy:legacy-support-v4:$rootProject.ext.supportLibraryVersion"
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.ext.androidArchVersion"
     implementation "androidx.multidex:multidex:$rootProject.ext.multiDexVersion"
 

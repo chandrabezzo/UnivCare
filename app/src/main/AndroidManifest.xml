@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name="com.widyatama.univcare.MvpApp"
+        android:name=".MvpApp"
         android:allowBackup="true"
         android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,27 +15,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.widyatama.univcare.features.main.MainActivity">
-        </activity>
+        <activity android:name=".features.main.MainActivity"></activity>
 
-        <service android:name="com.widyatama.univcare.services.MessagingService">
+        <service android:name=".services.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.widyatama.univcare.services.MessagingInstanceIDService">
+        <service android:name=".services.MessagingInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.widyatama.univcare.services.UpdateLocationService" />
+        <service android:name=".services.UpdateLocationService" />
 
-        <activity android:name="com.widyatama.univcare.features.auth.AuthActivity">
+        <activity android:name=".features.auth.AuthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".features.country.CountryActivity"></activity>
     </application>
 
 </manifest>

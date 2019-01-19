@@ -18,6 +18,8 @@ import com.widyatama.univcare.features.auth.register.RegisterPresenter
 import com.widyatama.univcare.features.main.MainContracts
 import com.widyatama.univcare.features.main.MainPresenter
 import com.google.gson.Gson
+import com.widyatama.univcare.features.country.CountryContracts
+import com.widyatama.univcare.features.country.CountryPresenter
 import io.reactivex.disposables.CompositeDisposable
 import org.koin.android.ext.koin.androidApplication
 import org.koin.dsl.module.module
@@ -37,6 +39,7 @@ val presenterModule = module {
     factory { LoginPresenter<LoginContracts.View>(get(), get(), get(), get(), get()) }
     factory { RegisterPresenter<RegisterContracts.View>(get(), get(), get(), get(), get()) }
     factory { ForgotPasswordPresenter<ForgotPasswordContracts.View>(get(), get(), get(), get(), get()) }
+    factory { CountryPresenter<CountryContracts.View>(get(), get(), get(), get()) }
 }
 
 val rvAdapterModule = module {

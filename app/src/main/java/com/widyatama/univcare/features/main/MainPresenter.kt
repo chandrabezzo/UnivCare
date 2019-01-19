@@ -31,7 +31,7 @@ constructor(private val apiHelper: ApiHelper, private val localHelper: LocalStor
     : BasePresenter<V>(sessionHelper, schedulerProvider, compositeDisposable), MainContracts.Presenter<V> {
 
     override fun getKaryawanApi() {
-        apiHelper.companyRepo.getKaryawan("1", "15")
+        apiHelper.getKaryawan("1", "15")
                 .getAsOkHttpResponseAndObjectList(Karyawan::class.java, object : ResponseOkHttp<List<Karyawan>>(200) {
                     override fun onSuccess(response: Response, model: List<Karyawan>) {
                         val exec = Executors.newSingleThreadExecutor()
@@ -71,7 +71,7 @@ constructor(private val apiHelper: ApiHelper, private val localHelper: LocalStor
     }
 
     override fun loadMoreKaryawan(limit: Int) {
-        apiHelper.companyRepo.getKaryawan("1", limit.toString())
+        apiHelper.getKaryawan("1", limit.toString())
                 .getAsOkHttpResponseAndObjectList(Karyawan::class.java, object : ResponseOkHttp<List<Karyawan>>(200) {
                     override fun onSuccess(response: Response, model: List<Karyawan>) {
                         val exec = Executors.newSingleThreadExecutor()
@@ -111,7 +111,7 @@ constructor(private val apiHelper: ApiHelper, private val localHelper: LocalStor
     }
 
     override fun getJabatanApi() {
-        compositeDisposable.add(apiHelper.companyRepo.getJabatan()
+        compositeDisposable.add(apiHelper.getJabatan()
                 .subscribe(object : ResponseHandler<JabatanResponse>(200){
                     override fun onSuccess(model: JabatanResponse) {
                         val exec = Executors.newSingleThreadExecutor()
@@ -150,7 +150,7 @@ constructor(private val apiHelper: ApiHelper, private val localHelper: LocalStor
     }
 
     override fun getUserApi() {
-        compositeDisposable.add(apiHelper.companyRepo.getUser()
+        compositeDisposable.add(apiHelper.getUser()
                 .subscribe(object : ResponseHandler<UserResponse>(200){
                     override fun onSuccess(model: UserResponse) {
                         val exec = Executors.newSingleThreadExecutor()
@@ -180,7 +180,7 @@ constructor(private val apiHelper: ApiHelper, private val localHelper: LocalStor
     }
 
     override fun getSocmedApi() {
-        apiHelper.companyRepo.getSocmed()
+        apiHelper.getSocmed()
                 .getAsOkHttpResponseAndObject(Socmed::class.java, object : ResponseOkHttp<Socmed>(200){
                     override fun onSuccess(response: Response, model: Socmed) {
                         val exec = Executors.newSingleThreadExecutor()
@@ -218,7 +218,7 @@ constructor(private val apiHelper: ApiHelper, private val localHelper: LocalStor
     }
 
     override fun addKaryawan(value: Karyawan) {
-        apiHelper.companyRepo.addKaryawan(value)
+        apiHelper.addKaryawan(value)
                 .getAsOkHttpResponseAndObject(Karyawan::class.java, object : ResponseOkHttp<Karyawan>(201){
                     override fun onSuccess(response: Response, model: Karyawan) {
                         view?.getContext()?.toast("yeah", Toast.LENGTH_SHORT)
