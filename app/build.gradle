@@ -41,6 +41,7 @@ android {
             versionNameSuffix '.DEBUG'
             useProguard false
             buildConfigField("String", "BASE_URL", "\"http://192.168.200.35:3000/\"")
+            buildConfigField("String", "BASE_COUNTRY", "\"https://restcountries.eu/rest/v2/\"")
         }
         staging {
             minifyEnabled true
@@ -49,6 +50,7 @@ android {
             versionNameSuffix '.STAGING'
             resValue "string", "app_name", "Univ Care Staging"
             buildConfigField("String", "BASE_URL", "\"http://10.42.0.229:3000/\"")
+            buildConfigField("String", "BASE_COUNTRY", "\"https://restcountries.eu/rest/v2/\"")
         }
         release {
             minifyEnabled true
@@ -56,6 +58,7 @@ android {
             resValue "string", "app_name", "Univ Care"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField("String", "BASE_URL", "\"http://192.168.1.12:3000/\"")
+            buildConfigField("String", "BASE_COUNTRY", "\"https://restcountries.eu/rest/v2/\"")
         }
     }
 
@@ -109,6 +112,7 @@ dependencies {
     // # Image
     implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
     kapt "com.github.bumptech.glide:compiler:$rootProject.ext.glideVersion"
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
 
     // # Parser
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"

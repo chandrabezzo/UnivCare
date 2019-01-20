@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.widyatama.univcare.features.country.CountryActivity">
+    tools:context="com.widyatama.univcare.features.favorite.FavoriteActivity">
 
     <include
         android:id="@+id/toolbar"
@@ -14,7 +14,7 @@
         layout="@layout/default_toolbar"/>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/sr_country"
+        android:id="@+id/sr_favorite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -24,17 +24,17 @@
             android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_country"
+                android:id="@+id/rv_favorite"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                tools:listitem="@layout/item_rv_country"/>
+                android:layout_weight="1"/>
 
             <ProgressBar
-                android:id="@+id/pb_country"
+                android:id="@+id/pb_favorite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone"/>
         </LinearLayout>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </LinearLayout>

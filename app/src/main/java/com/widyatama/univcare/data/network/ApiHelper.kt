@@ -4,6 +4,7 @@ import com.rx2androidnetworking.Rx2ANRequest
 import com.widyatama.core.data.network.RestApi
 import com.widyatama.core.data.session.SessionHelper
 import com.widyatama.core.util.SchedulerProviderUtil
+import com.widyatama.univcare.constanta.ApiConstans
 import com.widyatama.univcare.data.model.JabatanResponse
 import com.widyatama.univcare.data.model.Karyawan
 import com.widyatama.univcare.data.model.UserResponse
@@ -48,5 +49,12 @@ constructor(val schedulerProvider: SchedulerProviderUtil) {
 
     fun test(): Rx2ANRequest {
         return RestApi.get("http://202.138.242.21:8042/v1/auth/test-mobile", null, null, null)
+    }
+
+    fun getCountries(): Rx2ANRequest {
+        val params = HashMap<String, String>()
+        params[ApiConstans.FIELDS] = "name;flag"
+
+        return RestApi.get(ApiEndPoint.COUNTRIES, params, null, null)
     }
 }

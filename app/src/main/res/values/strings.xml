@@ -23,6 +23,14 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
 
+    <!-- Search -->
+    <string name="nama_kampus">Nama Kampus</string>
+    <string name="favorite">Favorite</string>
+    <string name="universitas">Universitas</string>
+    <string name="politeknik">Politeknik</string>
+    <string name="institut">Institut</string>
+    <string name="cari_kampus">Cari Kampus</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

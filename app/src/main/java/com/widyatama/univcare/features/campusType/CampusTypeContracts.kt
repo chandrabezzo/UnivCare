@@ -1,15 +1,15 @@
-package com.widyatama.univcare.features.country
+package com.widyatama.univcare.features.campusType
 
 import com.widyatama.core.base.BaseActivityContract
 import com.widyatama.core.base.BasePresenterContract
-import com.widyatama.univcare.data.model.Country
+import com.widyatama.univcare.data.model.CampusType
 
-class CountryContracts {
+class CampusTypeContracts {
     interface View: BaseActivityContract {
-        fun showCountries(values: ArrayList<Country>)
+        fun showTypes(values: ArrayList<CampusType>)
     }
 
     interface Presenter<V: View>: BasePresenterContract<V> {
-        fun getCountries()
+        fun getTypes()
     }
 }

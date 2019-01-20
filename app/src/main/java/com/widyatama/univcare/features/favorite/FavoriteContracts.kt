@@ -1,15 +1,14 @@
-package com.widyatama.univcare.features.country
+package com.widyatama.univcare.features.favorite
 
 import com.widyatama.core.base.BaseActivityContract
 import com.widyatama.core.base.BasePresenterContract
-import com.widyatama.univcare.data.model.Country
 
-class CountryContracts {
+class FavoriteContracts {
     interface View: BaseActivityContract {
-        fun showCountries(values: ArrayList<Country>)
+
     }
 
     interface Presenter<V: View>: BasePresenterContract<V> {
-        fun getCountries()
+
     }
 }

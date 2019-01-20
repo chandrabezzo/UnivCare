@@ -18,4 +18,6 @@ public final class ApiConstans {
     public static final String STATUS = "status";
     public static final String LIMIT = "limit";
     public static final String FILTER = "filter";
+
+    public static final String FIELDS = "fields";
 }
