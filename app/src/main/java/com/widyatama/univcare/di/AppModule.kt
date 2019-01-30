@@ -23,8 +23,6 @@ import com.widyatama.univcare.features.home.HomeContract
 import com.widyatama.univcare.features.home.HomePresenter
 import com.widyatama.univcare.features.list.ListContract
 import com.widyatama.univcare.features.list.ListPresenter
-import com.widyatama.univcare.features.main.MainContracts
-import com.widyatama.univcare.features.main.MainPresenter
 import com.widyatama.univcare.features.searchCampus.SearchCampusContracts
 import com.widyatama.univcare.features.searchCampus.SearchCampusPresenter
 import io.reactivex.disposables.CompositeDisposable
@@ -35,14 +33,13 @@ import org.koin.dsl.module.module
 val appModule = module {
     single { LocalStorageHelper(androidApplication()) }
     single { SessionHelper() }
-    single { CompositeDisposable() }
+    factory { CompositeDisposable() }
     single { Gson() }
     single { SchedulerProviderUtil() }
     single { ApiHelper(get()) }
 }
 
 val presenterModule = module {
-    factory { MainPresenter<MainContracts.View>(get(), get(), get(), get(), get()) }
     factory { CountryPresenter<CountryContracts.View>(get(), get(), get(), get()) }
     factory { CampusTypePresenter<CampusTypeContracts.View>(get(), get(), get(), get()) }
     factory { FavoritePresenter<FavoriteContracts.View>(get(), get(), get(), get()) }
