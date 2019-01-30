@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".features.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,22 +23,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".features.home.HomeActivity" />
 
         <service android:name=".services.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <service android:name=".services.MessagingInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <activity android:name=".features.country.CountryActivity">
-        </activity>
+
         <activity android:name=".features.favorite.FavoriteActivity" />
         <activity android:name=".features.campusType.CampusTypeActivity">
         </activity>
+        <activity android:name=".features.country.CountryActivity" />
+        <activity android:name=".features.filter.FilterActivity" />
+        <activity android:name=".features.list.ListActivity" />
+        <activity android:name=".features.search.SearchActivity" />
+        <activity android:name=".features.webview.WebViewActivity"></activity>
     </application>
 
 </manifest>

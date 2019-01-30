@@ -42,7 +42,7 @@ class CountryActivity : BaseActivity(), CountryContracts.View {
     }
 
     override fun setLayout(): Int {
-        return R.layout.activity_country
+        return R.layout.activity_main
     }
 
     override fun showCountries(values: ArrayList<Country>) {

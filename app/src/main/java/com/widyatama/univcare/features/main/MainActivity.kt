@@ -50,7 +50,7 @@ class MainActivity : BaseActivity(), MainContracts.View {
         presenter.getAllKaryawan()
         presenter.getKaryawanApi()
         presenter.getSocmed()
-        presenter.getSocmedApi()
+//        presenter.getSocmedApi()
 
         sr_list.setOnRefreshListener {
             presenter.getKaryawanApi()

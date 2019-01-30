@@ -40,8 +40,8 @@ android {
             applicationIdSuffix ".dev"
             versionNameSuffix '.DEBUG'
             useProguard false
-            buildConfigField("String", "BASE_URL", "\"http://192.168.200.35:3000/\"")
             buildConfigField("String", "BASE_COUNTRY", "\"https://restcountries.eu/rest/v2/\"")
+            buildConfigField("String", "BASE_URL", "\"http://universities.hipolabs.com/\"")
         }
         staging {
             minifyEnabled true
@@ -49,16 +49,16 @@ android {
             applicationIdSuffix ".staging"
             versionNameSuffix '.STAGING'
             resValue "string", "app_name", "Univ Care Staging"
-            buildConfigField("String", "BASE_URL", "\"http://10.42.0.229:3000/\"")
             buildConfigField("String", "BASE_COUNTRY", "\"https://restcountries.eu/rest/v2/\"")
+            buildConfigField("String", "BASE_URL", "http://universities.hipolabs.com/\"")
         }
         release {
             minifyEnabled true
             useProguard true
             resValue "string", "app_name", "Univ Care"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "BASE_URL", "\"http://192.168.1.12:3000/\"")
             buildConfigField("String", "BASE_COUNTRY", "\"https://restcountries.eu/rest/v2/\"")
+            buildConfigField("String", "BASE_URL", "http://universities.hipolabs.com/\"")
         }
     }
 

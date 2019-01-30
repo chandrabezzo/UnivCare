@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit
 
 object HttpClient : OkHttpClient() {
 
-    var sessionHelper = SessionHelper()
+//    var sessionHelper = SessionHelper()
 
     var urlLog : String? = null
     var headersLog : String? = null

@@ -12,6 +12,7 @@ public final class ApiEndPoint {
     public static final String KARYAWAN = BuildConfig.BASE_URL + "karyawan";
     public static final String SOCMED = BuildConfig.BASE_URL + "socialMedia";
     public static final String COUNTRIES = BuildConfig.BASE_COUNTRY + "all";
+    public static final String UNIV = BuildConfig.BASE_URL + "search";
 
     private ApiEndPoint() {
         // This class is not publicly instantiable

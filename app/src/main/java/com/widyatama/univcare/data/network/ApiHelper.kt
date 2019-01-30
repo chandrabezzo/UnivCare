@@ -7,6 +7,7 @@ import com.widyatama.core.util.SchedulerProviderUtil
 import com.widyatama.univcare.constanta.ApiConstans
 import com.widyatama.univcare.data.model.JabatanResponse
 import com.widyatama.univcare.data.model.Karyawan
+import com.widyatama.univcare.data.model.UniversityResponse
 import com.widyatama.univcare.data.model.UserResponse
 import io.reactivex.Observable
 
@@ -56,5 +57,12 @@ constructor(val schedulerProvider: SchedulerProviderUtil) {
         params[ApiConstans.FIELDS] = "name;flag"
 
         return RestApi.get(ApiEndPoint.COUNTRIES, params, null, null)
+    }
+
+    fun getUniv(name: String, country: String): Rx2ANRequest {
+        var params = HashMap<String, String>()
+        params["name"] = name
+        params["country"] = country
+        return RestApi.get(ApiEndPoint.UNIV, params, null, null)
     }
 }

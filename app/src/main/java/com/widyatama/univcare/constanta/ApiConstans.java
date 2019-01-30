@@ -19,5 +19,9 @@ public final class ApiConstans {
     public static final String LIMIT = "limit";
     public static final String FILTER = "filter";
 
+<<<<<<< Updated upstream
     public static final String FIELDS = "fields";
+=======
+    public static final String SEARCH = "search";
+>>>>>>> Stashed changes
 }
