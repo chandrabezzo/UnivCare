@@ -59,6 +59,13 @@ constructor(val schedulerProvider: SchedulerProviderUtil) {
         return RestApi.get(ApiEndPoint.COUNTRIES, params, null, null)
     }
 
+    fun getCountry(keyword: String): Rx2ANRequest {
+        val paths = HashMap<String, String>()
+        paths["keyword"] = keyword
+
+        return RestApi.get(ApiEndPoint.COUNTRY, null, paths, null)
+    }
+
     fun getUniv(name: String, country: String): Rx2ANRequest {
         var params = HashMap<String, String>()
         params["name"] = name

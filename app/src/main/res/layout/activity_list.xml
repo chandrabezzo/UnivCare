@@ -6,12 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.widyatama.univcare.features.list.ListActivity">
 
-    <include
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/default_toolbar"
-        android:layout_alignParentTop="true"/>
+        android:minHeight="?android:attr/actionBarSize"
+        android:maxHeight="?android:attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        app:title="@string/app_name"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/sr_list"

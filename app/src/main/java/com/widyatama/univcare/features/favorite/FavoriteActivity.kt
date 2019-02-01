@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.widyatama.core.base.BaseActivity
 import com.widyatama.univcare.R
+import kotlinx.android.synthetic.main.activity_favorite.*
 import org.koin.android.ext.android.inject
 
 class FavoriteActivity : BaseActivity(), FavoriteContracts.View {
@@ -15,6 +16,14 @@ class FavoriteActivity : BaseActivity(), FavoriteContracts.View {
 
     override fun onInitializedView(savedInstanceState: Bundle?) {
         presenter.onAttach(this)
+
+        setSupportActionBar(toolbar)
+        mActionBar = supportActionBar
+        displayHome()
+        setActionBarTitle(getString(R.string.app_name))
+        toolbar.setNavigationOnClickListener {
+            onNavigationClick()
+        }
     }
 
     override fun onDestroy() {

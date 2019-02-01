@@ -1,21 +1,14 @@
 package com.widyatama.univcare.features.list
 
-import android.widget.Toast
 import com.androidnetworking.error.ANError
 import com.widyatama.core.base.BasePresenter
-import com.widyatama.core.data.network.ResponseHandler
 import com.widyatama.core.data.network.ResponseOkHttp
 import com.widyatama.core.data.session.SessionHelper
-import com.widyatama.core.extension.toast
 import com.widyatama.core.util.SchedulerProviderUtil
-import com.widyatama.univcare.data.model.Karyawan
 import com.widyatama.univcare.data.model.UniversityResponse
 import com.widyatama.univcare.data.network.ApiHelper
-import com.widyatama.univcare.features.home.HomeContract
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
 import okhttp3.Response
-import java.util.concurrent.Executors
 
 
 /**
