@@ -1,20 +1,20 @@
 package com.widyatama.univcare.features.list
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import com.widyatama.univcare.R
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.widyatama.core.base.BaseActivity
 import com.widyatama.core.extension.launchActivity
 import com.widyatama.core.listener.OnItemClickListener
-import com.widyatama.core.listener.OnLoadMoreListener
-import com.widyatama.univcare.R
 import com.widyatama.univcare.adapter.recyclerView.UniversityRVAdapter
 import com.widyatama.univcare.constanta.ApiConstans
+import com.widyatama.univcare.constanta.AppConstans
 import com.widyatama.univcare.data.model.UniversityResponse
 import com.widyatama.univcare.features.webview.WebViewActivity
 import kotlinx.android.synthetic.main.activity_list.*
@@ -32,18 +32,27 @@ class ListActivity : BaseActivity(), ListContract.View {
 
     override fun onInitializedView(savedInstanceState: Bundle?) {
         presenter.onAttach(this)
+
+        setSupportActionBar(toolbar)
+        mActionBar = supportActionBar
+        displayHome()
         setActionBarTitle(getString(R.string.app_name))
+        toolbar.setNavigationOnClickListener {
+            onNavigationClick()
+        }
 
         rvUniversity = UniversityRVAdapter(this, listUniversity)
         initRecyclerView()
 
         val filter = dataReceived?.getInt(ApiConstans.FILTER)
         val search = dataReceived?.getString(ApiConstans.SEARCH)
+        val countryName = dataReceived?.getString(AppConstans.COUNTRY_NAME)
         if (filter != null){
             when(filter){
                 1 -> presenter.getUniv("institut", "indonesia")
                 2 -> presenter.getUniv("universitas", "")
                 3 -> presenter.getUniv("politeknik", "")
+                4 -> presenter.getUniv("", countryName ?: "")
             }
         }
         if (search != null){
@@ -68,12 +77,22 @@ class ListActivity : BaseActivity(), ListContract.View {
         rvUniversity.notifyDataSetChanged()
         rvUniversity.setOnItemClickListener(object : OnItemClickListener{
             override fun onItemLongClick(itemView: View, position: Int): Boolean {
-                return false
+                val favoriteDialog = AlertDialog.Builder(this@ListActivity)
+                favoriteDialog.setTitle(getString(R.string.favorite))
+                favoriteDialog.setMessage(getString(R.string.tambahkan_sebagai_favorite))
+                favoriteDialog.setPositiveButton("Tambah") { _, _ ->
+                    presenter.addAsFavorite(listUniversity[position])
+                }
+                favoriteDialog.setNegativeButton("Batal") { dialog, which ->
+                    dialog.dismiss()
+                }
+                favoriteDialog.show()
+                return true
             }
 
             override fun onItemClick(itemView: View, position: Int) {
                 val item = listUniversity.get(position)
-                launchActivity<WebViewActivity>(false){
+                launchActivity<WebViewActivity>(true){
                     putExtra(ApiConstans.DATA, item.webPages?.get(0))
                 }
 

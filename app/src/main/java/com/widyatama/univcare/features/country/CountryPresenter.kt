@@ -36,4 +36,26 @@ class CountryPresenter<V: CountryContracts.View>
 
                 })
     }
+
+    override fun getCountry(keyword: String) {
+        apiHelper.getCountry(keyword).getAsOkHttpResponseAndObjectList(Country::class.java,
+                object : ResponseOkHttp<ArrayList<Country>>(200){
+                    override fun onSuccess(response: Response, model: ArrayList<Country>) {
+                        view?.showCountries(model)
+                    }
+
+                    override fun onUnauthorized() {
+                        logout()
+                    }
+
+                    override fun onFailed(response: Response) {
+                        logging(response.message())
+                    }
+
+                    override fun onHasError(error: ANError) {
+                        handleApiError(error)
+                    }
+
+                })
+    }
 }

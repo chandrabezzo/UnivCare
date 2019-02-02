@@ -18,7 +18,15 @@ class FilterActivity : BaseActivity(), FilterContract.View{
 
     override fun onInitializedView(savedInstanceState: Bundle?) {
         presenter.onAttach(this)
+
+        setSupportActionBar(toolbar)
+        mActionBar = supportActionBar
+        displayHome()
         setActionBarTitle(getString(R.string.filter))
+        toolbar.setNavigationOnClickListener {
+            onNavigationClick()
+        }
+
         btnInstitute.setOnClickListener {
             launchActivity<ListActivity>(false){
                 putExtra(ApiConstans.FILTER, 1)
@@ -35,8 +43,7 @@ class FilterActivity : BaseActivity(), FilterContract.View{
             }
         }
         btnCountry.setOnClickListener {
-            // masuk ke activity pilih country
-//             launchActivity<CountryActivity>(false)
+            launchActivity<CountryActivity>()
         }
 
     }

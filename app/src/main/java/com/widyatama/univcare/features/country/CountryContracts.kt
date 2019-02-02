@@ -11,5 +11,7 @@ class CountryContracts {
 
     interface Presenter<V: View>: BasePresenterContract<V> {
         fun getCountries()
+
+        fun getCountry(keyword: String)
     }
 }

@@ -49,10 +49,10 @@ class UniversityRVAdapter(var context : Context,
             itemView.setOnClickListener {
                 listener.onItemClick(it, layoutPosition)
             }
-//
-//            itemView.setOnLongClickListener {
-//                listener.onItemLongClick(it, layoutPosition)
-//            }
+
+            itemView.setOnLongClickListener {
+                listener.onItemLongClick(it, layoutPosition)
+            }
         }
 
         override fun setContent(model: UniversityResponse.University) {

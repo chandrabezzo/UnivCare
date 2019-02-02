@@ -5,6 +5,7 @@ import com.widyatama.core.base.BaseActivity
 import com.widyatama.core.extension.launchActivity
 import com.widyatama.univcare.R
 import com.widyatama.univcare.data.model.UniversityResponse
+import com.widyatama.univcare.features.favorite.FavoriteActivity
 import com.widyatama.univcare.features.filter.FilterActivity
 import com.widyatama.univcare.features.search.SearchActivity
 import kotlinx.android.synthetic.main.activity_home.*
@@ -24,7 +25,7 @@ class HomeActivity : BaseActivity(), HomeContract.View {
             launchActivity<FilterActivity>(false)
         }
         btnFavorite.setOnClickListener {
-//            launchActivity<MainActivity>(false)
+            launchActivity<FavoriteActivity>(false)
         }
     }
 

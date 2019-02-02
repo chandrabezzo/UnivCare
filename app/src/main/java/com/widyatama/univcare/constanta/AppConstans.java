@@ -19,4 +19,7 @@ public final class AppConstans {
     public static final String JABATAN = "Jabatan";
     public static final String KARYAWAN = "Karyawan";
     public static final String SOCMED = "Socmed";
+
+    // Country
+    public static final String COUNTRY_NAME = "CountryName";
 }
