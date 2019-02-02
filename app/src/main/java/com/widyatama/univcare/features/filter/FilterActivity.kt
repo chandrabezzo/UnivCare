@@ -36,7 +36,7 @@ class FilterActivity : BaseActivity(), FilterContract.View{
         }
         btnCountry.setOnClickListener {
             // masuk ke activity pilih country
-            // launchActivity<CountryActivity>(false)
+//             launchActivity<CountryActivity>(false)
         }
 
     }

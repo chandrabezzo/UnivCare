@@ -34,11 +34,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="filter">Filter</string>
     <string name="favorite">Favorite</string>
-
-
-    <string name="kategori">Kategori Kampus</string>
     <string name="kategori_negara">Kategori Negara</string>
     <string name="negara">Negara</string>
+    <string name="kategori">Kategori</string>
     <string name="searching">Cari Kampus</string>
 
 
