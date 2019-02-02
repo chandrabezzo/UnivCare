@@ -22,5 +22,7 @@ class ListContract {
 
     interface Presenter<V : View> : BasePresenterContract<V> {
         fun getUniv(name: String, country: String)
+
+        fun addAsFavorite(value: UniversityResponse.University)
     }
 }

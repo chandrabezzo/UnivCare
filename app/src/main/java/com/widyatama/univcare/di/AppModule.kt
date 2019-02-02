@@ -42,11 +42,11 @@ val appModule = module {
 val presenterModule = module {
     factory { CountryPresenter<CountryContracts.View>(get(), get(), get(), get()) }
     factory { CampusTypePresenter<CampusTypeContracts.View>(get(), get(), get(), get()) }
-    factory { FavoritePresenter<FavoriteContracts.View>(get(), get(), get(), get()) }
+    factory { FavoritePresenter<FavoriteContracts.View>(get(), get(), get(), get(), get()) }
     factory { SearchCampusPresenter<SearchCampusContracts.View>(get(), get(), get(), get()) }
     factory { HomePresenter<HomeContract.View>(get(), get(), get(), get()) }
     factory { FilterPresenter<FilterContract.View>(get(), get(), get(), get()) }
-    factory { ListPresenter<ListContract.View>(get(), get(), get(), get()) }
+    factory { ListPresenter<ListContract.View>(get(), get(), get(), get(), get()) }
 }
 
 val rvAdapterModule = module {

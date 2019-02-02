@@ -1,9 +1,11 @@
 package com.widyatama.univcare.features.list
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.widyatama.core.base.BaseActivity
@@ -75,7 +77,17 @@ class ListActivity : BaseActivity(), ListContract.View {
         rvUniversity.notifyDataSetChanged()
         rvUniversity.setOnItemClickListener(object : OnItemClickListener{
             override fun onItemLongClick(itemView: View, position: Int): Boolean {
-                return false
+                val favoriteDialog = AlertDialog.Builder(this@ListActivity)
+                favoriteDialog.setTitle(getString(R.string.favorite))
+                favoriteDialog.setMessage(getString(R.string.tambahkan_sebagai_favorite))
+                favoriteDialog.setPositiveButton("Tambah") { _, _ ->
+                    presenter.addAsFavorite(listUniversity[position])
+                }
+                favoriteDialog.setNegativeButton("Batal") { dialog, which ->
+                    dialog.dismiss()
+                }
+                favoriteDialog.show()
+                return true
             }
 
             override fun onItemClick(itemView: View, position: Int) {

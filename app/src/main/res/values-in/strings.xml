@@ -10,4 +10,6 @@
     <string name="institut">Institute</string>
     <string name="negara">Negara</string>
     <string name="searching">Cari Kampus</string>
+    <string name="tambahkan_sebagai_favorite">Tambahkan sebagai favorite?</string>
+    <string name="hapus_dari_favorite">Hapus dari favorite?</string>
 </resources>
